@@ -48,4 +48,8 @@ th, td {
   display: none;
 }
 
+@media screen and (max-width: 576px) {
+  /* CSS code for mobile devices */
+}
+
 
