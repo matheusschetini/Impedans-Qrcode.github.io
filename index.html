@@ -1,96 +1,47 @@
 <!DOCTYPE html>
-
-
-
 <html>
-<heahtmld>
+<head>
+  <title>Impedance Product</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Impedance</h1>
+    <nav>
+      <li><a href="#">Other Products</a></li>
+      <li><a href="#">Service Calls</a></li>
+    </nav>
+  </header>
 
-  <title>Impedance - Product</title>
+  <main>
+    <h1>Product</h1>
 
-  </head>
-
-  <body>
-
-    <header>
-
-      <h1>Impedance</h1>
-
-      <menu>
-
-        <li><a href="#">Other Products</a></li>
-
-        <li><a href="#">Service Calls</a></li>
-
-      </menu>
-
-
-
-
-
-      </head>
-
-      <link rel="stylesheet" type="text/css" href="style.css">
-    </header>
-
-    <main>
-
-      <h1>Product</h1>
-
-      <table border="1">
-
+    <table border="1">
+      <thead>
         <tr>
-
           <th>Product Name</th>
-
-          <td> Octive mono 2.0</td>
-
-        </tr>
-
-        <tr>
-
-          <th>Serial Name</th>
-
-          <td> IP213-XXXX-XXXX</td>
-
-        </tr>
-
-        <tr>
-
+          <th>Serial Number</th>
           <th>Frequency</th>
-
-          <td> 60000mhz </td>
-
-        </tr>
-
-        <tr>
-
           <th>Last Calibration Date</th>
-
-          <td><input type="date" name="last_calibration_date"></td>
-
-        </tr>
-
-        <tr>
-
           <th>Next Calibration Date</th>
-
-          <td><input type="date" name="next_calibration_date"></td>
-
         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Octive mono 2.0</td>
+          <td>IP213-XXXX-XXXX</td>
+          <td>60000mhz</td>
+          <td><input type="date" name="last_calibration_date"></td>
+          <td><input type="date" name="next_calibration_date"></td>
+        </tr>
+      </tbody>
+    </table>
 
-      </table>
+    <button type="submit">Ask for a Recalibration</button>
 
-      <button type="submit">Ask for a Recalibration</button>
-
-      <div class="commentary-bubble">
-
-        This will automatically send an email with all the information to set up the Recalibration.
-
-      </div>
-
-    </main>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-  </body>
-
+    <div class="commentary-bubble">
+      This will automatically send an email with all the information to set up the Recalibration.
+    </div>
+  </main>
+</body>
 </html>
