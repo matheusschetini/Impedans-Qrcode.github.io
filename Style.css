@@ -1,0 +1,143 @@
+body {
+
+  font-family: sans-serif;
+
+  background-color: #f2f2f2;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+header {
+
+  background-color: #ff0000;
+  color:#000000;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+
+  font-size: 2em;
+
+  margin: 0;
+
+  padding: 1em;
+
+  color: #000000;
+
+}
+
+menu {
+
+  float: right;
+
+  list-style-type: none;
+  background: #ff0000;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+
+  display: inline;
+
+  padding: 0.5em;
+
+}
+
+a {
+
+  color: #000000;
+
+  text-decoration: none;
+
+}
+
+main {
+
+  padding: 1em;
+
+}
+
+table {
+
+  border-collapse: collapse;
+
+  width: 100%;
+
+}
+
+th, td {
+
+  border: 1px solid #000000;
+
+  padding: 0.5em;
+
+  color: #000000;
+
+}
+
+button {
+  
+  margin:1.5em;
+  background-color: #ff0000;
+
+  color: #ffffff;
+
+  padding: 0.5em;
+
+}
+
+.commentary-bubble {
+
+  background-color: red;
+
+  border: 1px solid black;
+
+  border-radius: 5px;
+
+  padding: 1em;
+
+  position: relative;
+
+  width: fit-content;
+
+}
+
+.commentary-bubble:after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 0;
+
+  height: 0;
+
+  border-top: 15px solid red;
+
+  border-left: 15px solid transparent;
+
+  border-right: 15px solid transparent;
+
+  clear: both;
+
+}
+
+
+}
+
+
+
+ 
