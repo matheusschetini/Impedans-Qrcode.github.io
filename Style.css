@@ -1,55 +1,128 @@
+/* Style.css */
+
+/* Use light gray for the background */
 body {
-  background-color: lightgray;
-  font-family: sans-serif;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: red;
-  padding: 1rem;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 2rem;
-}
-
-nav {
-  float: right;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-main {
-  padding: 1rem;
-}
-
+/* Use white for the table */
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
+  margin: 20px auto;
+  background-color: white;
 }
 
+/* Add some padding and margin to the table cells */
 th, td {
-  border: 1px solid black;
-  padding: 0.5rem;
+  padding: 10px;
+  text-align: left;
 }
 
+/* Use red for the header and the button */
+header, button {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* Make the header sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Make the header title larger */
+header h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+
+/* Make the nav bar horizontal and aligned to the right */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Remove the bullet points from the nav list */
+nav li {
+  list-style: none;
+}
+
+/* Add some spacing and styling to the nav links */
+nav a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Change the nav link color on hover */
+nav a:hover {
+  background-color: white;
+  color: #ff0000;
+}
+
+/* Center the main title */
+main h1 {
+  text-align: center;
+}
+
+/* Style the button */
+button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  border: none;
+  cursor: pointer;
+}
+
+/* Change the button color on hover */
+button:hover {
+  background-color: white;
+  color: #ff0000;
+}
+
+/* Style the commentary bubble */
 .commentary-bubble {
-  border: 1px dashed red;
-  padding: 0.5rem;
-  margin: 1rem 0;
-  display: none;
+  width: 300px;
+  height: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  font-style: italic;
+  text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  /* CSS code for mobile devices */
+/* Add a media query for the mobile version */
+@media screen and (max-width: 600px) {
+  /* Make the table responsive */
+  table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Make the nav bar vertical and aligned to the left */
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  /* Adjust the nav link spacing and width */
+  nav a {
+    margin: 5px;
+    width: 100%;
+  }
+
+  /* Adjust the commentary bubble size and position */
+  .commentary-bubble {
+    width: 80%;
+    left: 10%;
+  }
 }
-
-
